@@ -8,9 +8,7 @@ dllmain-rs = { git = "https://github.com/BudiNverse/dllmain-rs" }
 
 ### Example usage
 ```rust
-use dllmain_rs::dllmain;
-
-#[dllmain]
+#[dllmain_rs::entry]
 fn real_entry() {
     unsafe { consoleapi::AllocConsole(); }
     let base_addr = get_base_addr();
