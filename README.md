@@ -8,7 +8,6 @@ dllmain-rs = { git = "https://github.com/BudiNverse/dllmain-rs" }
 
 ### Example usage
 ```rust
-use dllmain_rs::dllmain;
 use std::thread;
 
 #[dllmain_rs::entry]
