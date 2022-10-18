@@ -3,7 +3,7 @@
 
 ### Cargo.toml
 ```toml
-dllmain-rs = { git = "https://github.com/BudiNverse/dllmain-rs" }
+dllmain-rs = { git = "https://github.com/zeon256/dllmain-rs" }
 winapi = { version = "0.3.9", features = ["minwindef"]}
 ```
 
