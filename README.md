@@ -1,9 +1,19 @@
 # `dllmain-rs`
+
+[![Crates.io](https://img.shields.io/crates/v/dllmain-rs)](https://crates.io/crates/dllmain-rs)
+[![Crates.io Downloads](https://img.shields.io/crates/d/dllmain-rs)](https://crates.io/crates/dllmain-rs)
+[![Docs.rs](https://img.shields.io/docsrs/dllmain-rs)](https://docs.rs/dllmain-rs)
+[![License](https://img.shields.io/badge/license-Apache--2.0%2FMIT-blue)](#license)
+
 > A proc macro to generate dllmain
 
-### Cargo.toml
+### Installation
+
+Add this to your `Cargo.toml`:
+
 ```toml
-dllmain-rs = { git = "https://github.com/zeon256/dllmain-rs" }
+[dependencies]
+dllmain-rs = "0.1.0"
 ```
 
 ### Options
@@ -59,3 +69,14 @@ See `examples/README.md` for end-to-end `cdylib` consumer crates:
 
 - `examples/minimal-dll`
 - `examples/lifecycle-dll`
+
+### License
+
+Licensed under either of
+
+- Apache License, Version 2.0
+  ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+- MIT license
+  ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+
+at your option.
