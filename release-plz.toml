@@ -1,0 +1,14 @@
+[workspace]
+allow_dirty = false
+changelog_update = true
+dependencies_update = true
+git_release_enable = true
+semver_check = true
+
+[[package]]
+name = "dllmain-rs"
+git_release_enable = true
+changelog_update = true
+
+[changelog]
+protect_breaking_commits = true
