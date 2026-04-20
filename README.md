@@ -52,3 +52,10 @@ fn on_lifecycle(reason: u32) {
 waiting on synchronization primitives, and complex re-entrancy during load/unload.
 If your function panics, `panic = "abort"` terminates the process, while
 `panic = "return_false"` returns `FALSE` from `DllMain`.
+
+### Standalone example crates
+
+See `examples/README.md` for end-to-end `cdylib` consumer crates:
+
+- `examples/minimal-dll`
+- `examples/lifecycle-dll`
