@@ -124,7 +124,7 @@ impl Parse for EntryArgs {
                         return Err(Error::new_spanned(
                             value,
                             "invalid panic policy; expected \"abort\" or \"return_false\"",
-                        ))
+                        ));
                     }
                 };
             } else {
@@ -244,7 +244,7 @@ pub fn entry(attr: TokenStream, item: TokenStream) -> TokenStream {
             return TokenStream::from(
                 Error::new_spanned(other, "#[dllmain_rs::entry] expects a free function")
                     .to_compile_error(),
-            )
+            );
         }
     };
 
