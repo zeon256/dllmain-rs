@@ -289,7 +289,7 @@ pub fn entry(attr: TokenStream, item: TokenStream) -> TokenStream {
     };
 
     let output = quote! {
-        #[no_mangle]
+        #[unsafe(no_mangle)]
         #[allow(non_snake_case, unused_variables)]
         extern "system" fn DllMain(
             _dll_module: *mut ::core::ffi::c_void,
