@@ -59,3 +59,13 @@ See `examples/README.md` for end-to-end `cdylib` consumer crates:
 
 - `examples/minimal-dll`
 - `examples/lifecycle-dll`
+
+### Release automation (trusted publishing)
+
+This repository is configured for release-plz with trusted publishing.
+
+- `release-plz` release job requests an OIDC token (`id-token: write`) and does
+  not use `CARGO_REGISTRY_TOKEN`.
+- Configure trusted publishing in crates.io for this repository and workflow
+  before relying on automated publishing.
+- First-time publish of a new crate still requires manual publish on crates.io.
